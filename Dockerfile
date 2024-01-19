@@ -10,11 +10,12 @@ RUN apt-get install -y git
 
 
 
-RUN git clone  https://github.com/OnkarDivekar07/ExpenseTrackerWithMongoDB.git
+RUN git clone https://github.com/sushmabhapkar/onkar.git
 
-WORKDIR /ExpenseTrackerWithMongoDB
+WORKDIR /onkar
 
 RUN npm install -g npm@latest
+
 RUN npm i
 
 ENTRYPOINT [ "node", "app.js" ]
